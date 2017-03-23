@@ -1,0 +1,13 @@
+Package: farspackage
+Type: Package
+Title: Fars Functions
+Version: 0.1.0
+Author: Federica Bisio
+Maintainer: Federica Bisio <federica.bisio@gmail.com>
+Description: Methods to read and summarize data from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System, divided by years.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr

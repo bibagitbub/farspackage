@@ -1,0 +1,51 @@
+---
+title: "Fars Functions"
+author: "Federica Bisio"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+The functions provided use data from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System, which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes.
+
+## Functions Info
+
+The functions provide several methods to read and summarize the above data, divided by years.
+
+## How to use the functions
+
+Create the file name starting from the year:
+```{r, eval=FALSE}
+make_filename(year=2014)
+```
+
+Read a csv file and transform it into a table:
+```{r, eval=FALSE}
+f<-fars_read(filename)
+```
+
+Create a list of tables corrisponding to different years:
+```{r, eval=FALSE}
+fars_read_years(years=c(2014,2015))
+```
+
+Summarize results from multiple years:
+```{r, eval=FALSE}
+fars_summarize_years(years=c(2014,2015))
+```
+
+
+
+## Figures
+
+Create a graph for a specific state and year:
+
+```{r,fig.show='hold',warning=FALSE,message=FALSE}
+library(maps)
+library(farspackage)
+fars_map_state(state.num=1,year=2014)
+```
+
