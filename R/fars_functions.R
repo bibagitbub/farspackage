@@ -1,9 +1,3 @@
-library(readr)
-library(dplyr)
-library(tidyr)
-library(maps)
-library(graphics)
-
 #' Reads a csv file and transforms it into a table
 #'
 #' This function reads a file having \code{filename} as file name. If the file exists,
