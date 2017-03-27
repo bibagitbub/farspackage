@@ -17,6 +17,9 @@ This function receives a list of years as input and retrieves the associated dat
 with \code{fars_read_years}. Then it summarizes the results per year.
 }
 \examples{
-fars_summarize_years(years=c(2014,2015))
+\dontrun
+{
+  fars_summarize_years(years=c(2014,2015))
+}
 
 }
