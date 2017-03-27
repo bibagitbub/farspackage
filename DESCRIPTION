@@ -8,7 +8,10 @@ Description: Methods to read and summarize data from the US National Highway Tra
 License: CC0
 Encoding: UTF-8
 LazyData: true
+Depends: R (>= 3.3.2)
 Suggests: knitr,
-    rmarkdown
+    rmarkdown,
+	testthat
 VignetteBuilder: knitr
 RoxygenNote: 6.0.1
+Imports: dplyr, readr, maps, graphics, tidyr
