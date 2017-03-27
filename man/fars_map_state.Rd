@@ -23,9 +23,8 @@ The function needs the library maps.
 The function returns an error if the state number is invalid (not present)
 }
 \examples{
-\dontrun
-{
-  fars_map_state(state.num=1,year=2014)
+\dontrun{
+fars_map_state(state.num=1,year=2014)
 }
 
 }

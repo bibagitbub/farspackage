@@ -16,9 +16,8 @@ This function returns the string with the file name associated with the year
 This function creates the file name giving the \code{year} as input.
 }
 \examples{
-\dontrun
-{
-  make_filename(year=2014)
+\dontrun{
+make_filename(year=2014)
 }
 
 }

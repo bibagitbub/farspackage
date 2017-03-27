@@ -8,9 +8,8 @@
 #' @return This function returns the table with the data present in the file
 #'
 #' @examples
-#' \dontrun
-#' {
-#'   fars_read(filename="accident_2014.csv.bz2")
+#' \dontrun{
+#' fars_read(filename="accident_2014.csv.bz2")
 #' }
 #'
 #' @importFrom readr read_csv
@@ -38,9 +37,8 @@ fars_read <- function(filename) {
 #' @return This function returns the string with the file name associated with the year
 #'
 #' @examples
-#' \dontrun
-#' {
-#'   make_filename(year=2014)
+#' \dontrun{
+#' make_filename(year=2014)
 #' }
 #'
 #' @export
@@ -61,9 +59,8 @@ make_filename <- function(year) {
 #' @import dplyr
 #'
 #' @examples
-#' \dontrun
-#' {
-#'   fars_read_years(years=c(2014,2015))
+#' \dontrun{
+#' fars_read_years(years=c(2014,2015))
 #' }
 #'
 #' @note The function returns an error if the year is invalid:
@@ -98,9 +95,8 @@ fars_read_years <- function(years) {
 #' @importFrom tidyr spread
 #'
 #' @examples
-#' \dontrun
-#' {
-#'   fars_summarize_years(years=c(2014,2015))
+#' \dontrun{
+#' fars_summarize_years(years=c(2014,2015))
 #' }
 #'
 #' @export
@@ -131,9 +127,8 @@ fars_summarize_years <- function(years) {
 #' @importFrom graphics points
 #'
 #' @examples
-#' \dontrun
-#' {
-#'   fars_map_state(state.num=1,year=2014)
+#' \dontrun{
+#' fars_map_state(state.num=1,year=2014)
 #' }
 #'
 #' @note The function returns an error if the state number is invalid (not present)

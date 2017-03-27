@@ -20,9 +20,8 @@ the csv file is read and converted into a table format.
 The function returns an error if the file does not exist
 }
 \examples{
-\dontrun
-{
-  fars_read(filename="accident_2014.csv.bz2")
+\dontrun{
+fars_read(filename="accident_2014.csv.bz2")
 }
 
 }

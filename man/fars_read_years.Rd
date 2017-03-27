@@ -21,9 +21,8 @@ The function returns an error if the year is invalid:
 the corrispondent file does not exist
 }
 \examples{
-\dontrun
-{
-  fars_read_years(years=c(2014,2015))
+\dontrun{
+fars_read_years(years=c(2014,2015))
 }
 
 }
